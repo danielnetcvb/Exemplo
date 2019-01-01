@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<script src="../Scripts/jquery-3.3.1.min.js"></script>
+
+<html>
+    <body>
+        <input id="inputEnviaWebApi" onchange="new Uploader().Upload();" title="Teste WebApi" type="file" />
+    </body>
+</html>
+
+
+<script>
+
+    function Uploader() {
+        var retorno =
+        {
+            Upload: function () {
+                let formData = this.RetornaFormData();
+
+                if (formData != null)
+                    this.ChamaWebApi(formData);
+            },
+            RetornaFormData: function () {
+                let formData = null;
+
+                if (this.Valida())
+                {
+                    formData = new FormData();
+                    formData.append('meuArquivo', this.Input.files[0]);
+                }
+
+                return formData;
+            },
+            Valida: function () {
+                return this.Input.files.length > 0;
+            },
+            Input: document.getElementById("inputEnviaWebApi"),
+            ChamaWebApi: function (formData) {
+                $.ajax({
+                    type: "POST",
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    url: 'http://localhost:51570//api/upload',
+                    success: function (e) {
+                        if(e.Sucesso)
+                            alert("Sucesso no upload");
+                        else
+                            alert(e.MensagemErro)
+                    },
+                    error: function () {
+                        alert("Erro não tratado");
+                    }
+                });
+
+            }
+        }
+
+        return retorno;
+    }
+
+
+</script>

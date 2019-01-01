@@ -1,0 +1,9 @@
+C:\Users\Daniel\source\repos\ExemploZipWebApi\LibraryIO\bin\Debug\netstandard2.0\LibraryIO.deps.json
+C:\Users\Daniel\source\repos\ExemploZipWebApi\LibraryIO\bin\Debug\netstandard2.0\LibraryIO.dll
+C:\Users\Daniel\source\repos\ExemploZipWebApi\LibraryIO\bin\Debug\netstandard2.0\LibraryIO.pdb
+C:\Users\Daniel\source\repos\ExemploZipWebApi\LibraryIO\obj\Debug\netstandard2.0\LibraryIO.csprojAssemblyReference.cache
+C:\Users\Daniel\source\repos\ExemploZipWebApi\LibraryIO\obj\Debug\netstandard2.0\LibraryIO.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\source\repos\ExemploZipWebApi\LibraryIO\obj\Debug\netstandard2.0\LibraryIO.AssemblyInfoInputs.cache
+C:\Users\Daniel\source\repos\ExemploZipWebApi\LibraryIO\obj\Debug\netstandard2.0\LibraryIO.AssemblyInfo.cs
+C:\Users\Daniel\source\repos\ExemploZipWebApi\LibraryIO\obj\Debug\netstandard2.0\LibraryIO.dll
+C:\Users\Daniel\source\repos\ExemploZipWebApi\LibraryIO\obj\Debug\netstandard2.0\LibraryIO.pdb
